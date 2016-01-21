@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-default {
-	background-color: @gray;
+	background-color: @gray-darkest;
 	border-color: transparent;
 	.navbar-brand {
 		color: white;
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	background-image: url('../img/background.png');
+	background-image: url('../img/background-low.jpg');
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: center center;
@@ -229,6 +229,21 @@ section {
 		font-weight: 400;
 		margin-bottom: 75px;
     }
+		h3.section-legend {
+		padding: 0px 30px;
+		font-size: 15px;
+		.serif-font;
+		text-transform: none;
+		font-weight: 400;
+		margin-bottom: 75px;
+		}
+		h2.section-subheading {
+			font-size: 30px;
+			.serif-font;
+			text-transform: none;
+			font-weight: 400;
+			margin-bottom: 75px;
+		}
 }
 
 @media(min-width:768px) {
@@ -508,6 +523,7 @@ section {
 	img {
 		margin: 0 auto;
 		border: 7px solid white;
+		width:250px;
 	}
 	h4 {
 		margin-top: 25px;
@@ -537,6 +553,25 @@ aside.clients {
 .clients img:hover {
   filter: none;
   -webkit-filter: none;
+}
+
+section#Presse {
+	img {
+		margin: 50px auto;
+	}
+
+	.logo img {
+	  height: 70px;
+	  margin: 50px auto;
+	  display: block;
+	  //filter: grayscale(100%);
+	  //-webkit-filter: grayscale(100%);
+	}
+	.logo img:hover {
+	  filter: none;
+	  -webkit-filter: none;
+	}
+
 }
 
 // Contact Section
